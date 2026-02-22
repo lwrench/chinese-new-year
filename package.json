@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && cp f1a51e2195a798afc065e24fdceeadb7.txt dist/",
     "lint": "eslint .",
     "preview": "vite preview"
   },

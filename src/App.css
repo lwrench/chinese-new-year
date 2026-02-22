@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+
   position: relative;
   padding: 20px;
 }
@@ -129,13 +129,44 @@
   }
 }
 
-/* ── Hint text ── */
-.hint {
-  position: fixed;
-  bottom: 32px;
-  color: #555;
-  font-size: 13px;
+/* ── Action buttons ── */
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 500;
   letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.action-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+.action-btn:active {
+  transform: translateY(0);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.action-btn svg {
+  flex-shrink: 0;
 }
 
 /* ── Mobile responsive ── */
